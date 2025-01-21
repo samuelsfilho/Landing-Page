@@ -1,9 +1,19 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
 body {
-    background-color: aliceblue;
     background-image: url(./Imagens/um-grupo-de-cachorros-esta-reunido-em-um-quintal_808092-2447.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -13,7 +23,9 @@ body {
 .cabecalho {
     padding: 10px 5px;
     background-color: rgb(13, 163, 106);
-    opacity: 80%;
+    color: whitesmoke;
+    opacity: 70px;
+    background-attachment: fixed;
 }
 
 .cabecalho .logo {
@@ -31,11 +43,13 @@ body {
 }
 
 .main {
-    background-color: wheat;
-    padding: 30px;
-    width: 900px;
-    min-width: 320px;
-    max-width: 900px;
+    color: gray;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
 
     margin: 0 auto;
 }
@@ -55,19 +69,23 @@ body {
     opacity: 70%;
 }
 
-.rodape {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    background-color: rgb(83, 160, 83);
-    padding: 20px;
-    /* altura do rodapé */
+.footer {
+    padding: 1rem;
+    background-color: rgb(13, 163, 106);
+    color: gray;
+    opacity: 70px;
+    text-align: center;
+    margin-top: auto;
 }
 
-.a {
-    padding: 10px 100px;
-    display: inline-block;
-    font-size: 25px;
-    opacity: 80%;
+.footer .link {
+    float: left;
+    font-size: 20px;
 }
+
+
+.footer .link .a {
+    padding: 1rem;
+    display: inline-block;
+}
+
